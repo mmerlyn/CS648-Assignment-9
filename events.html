@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vecta Corp. Events</title>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header></header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Upcoming Events</h2>
+
+        <p class="vprospect">
+          October 11-13<br />
+          Emerging Technologies Conference<br />
+          Las Vegas, NV
+        </p>
+
+        <p class="vconvert">
+          November 18-20<br />
+          Marketing Strategies Summit<br />
+          Chicago, IL
+        </p>
+
+        <p class="vretain">
+          December 3-5<br />
+          Customer Retention Workshop<br />
+          San Francisco, CA
+        </p>
+      </section>
+      <aside>
+        <h2>Register Now</h2>
+
+        <p>
+          Sign up for our upcoming events and learn how Vecta Corporation can
+          help transform your business.
+        </p>
+      </aside>
+      <footer></footer>
+    </main>
+
+    <script>
+      $(document).ready(function () {
+        $("main p").removeClass("vprospect vconvert vretain");
+      });
+    </script>
+  </body>
+</html>
