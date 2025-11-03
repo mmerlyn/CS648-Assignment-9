@@ -33,7 +33,7 @@ Practice assignment demonstrating jQuery selectors and DOM manipulation techniqu
 - jQuery 3.7.1
 - Normalize.css
 
-## Learning Outcomes
+## Learning
 
 - jQuery selector syntax and specificity
 - DOM manipulation with jQuery
