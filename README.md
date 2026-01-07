@@ -1,30 +1,10 @@
-# CS648 Assignment 9 - jQuery Selectors and Commands
+# jQuery Selectors and DOM Manipulation
 
-## Description
+_This project demonstrates jQuery fundamentals including DOM manipulation, dynamic styling, selector syntax, class manipulation, and document ready events using the Vecta Corp website template._
 
-Practice assignment demonstrating jQuery selectors and DOM manipulation techniques using the Vecta Corp website. This assignment covers applying styles programmatically, modifying CSS properties, and dynamically adding/removing classes.
+## Overview
 
-## Features Implemented
-
-### index.html
-
-- **Heading Styling**: All `<h2>` elements within `<section>` and `<aside>` tags styled with:
-
-  - 1px solid black border
-  - Color: #CC1C0D
-  - Padding: 3px (top/bottom), 20px (left/right)
-  - Border radius: 5px (top-left and bottom-left corners)
-  - Background color: #DFE3E6
-
-- **Navigation Menu**: Dynamic class addition and styling:
-  - Programmatically added "navigation" class to all 5 menu items
-  - Applied styles: 1px solid #929C04 border, #CC1C0D text color
-  - Padding: 3px (top/bottom), 20px (left/right)
-  - Background color: #DFE3E6
-
-### events.html
-
-- **Class Removal**: Programmatically removed "vprospect", "vconvert", and "vretain" classes from all `<p>` tags within the main element
+This project is a web-based demonstration of jQuery selectors and DOM manipulation techniques applied to a corporate website template. The application dynamically styles elements, adds/removes classes, and modifies CSS properties programmatically using jQuery.
 
 ## Technologies Used
 
@@ -33,10 +13,49 @@ Practice assignment demonstrating jQuery selectors and DOM manipulation techniqu
 - jQuery 3.7.1
 - Normalize.css
 
-## Learning
+## What I Implemented
 
-- jQuery selector syntax and specificity
-- DOM manipulation with jQuery
-- CSS property manipulation via jQuery
-- Dynamic class addition and removal
-- Document ready function implementation
+### Dynamic Heading Styling (index.html)
+
+- **Combined Selectors**: Used `$("section h2, aside h2")` to target multiple elements
+- **CSS Method**: Applied multiple style properties via `.css()` method
+- **Styling Applied**: Border, color, padding, border-radius, and background-color
+
+### Navigation Menu Enhancement (index.html)
+
+- **addClass()**: Programmatically added "navigation" class to all 5 menu items
+- **Chained Styling**: Applied custom styles to dynamically added class
+- **Selector Usage**: Used `$("nav ul li")` for precise element targeting
+
+### Class Removal (events.html)
+
+- **removeClass()**: Removed multiple classes ("vprospect", "vconvert", "vretain") from paragraph elements
+- **Descendant Selector**: Used `$("main p")` to target paragraphs within main element
+
+### Document Ready Pattern
+
+- **$(document).ready()**: All jQuery code wrapped to ensure DOM is fully loaded
+- **Event Handling**: Proper initialization sequence for DOM manipulation
+
+### CSS Styling Techniques
+
+- **Fixed-width Layout**: 960px container with 3-column float-based design
+- **Background Images**: Header, footer, and product logos
+- **Hover Effects**: Navigation link interactions
+- **Semantic HTML5**: Proper use of header, nav, section, aside, and footer elements
+
+## Learnings
+
+- Understanding jQuery selector syntax and specificity
+- Manipulating CSS properties dynamically via the `.css()` method
+- Adding and removing classes programmatically with `.addClass()` and `.removeClass()`
+- Using combined selectors to target multiple elements efficiently
+- Implementing the document ready pattern for proper DOM initialization
+- Working with descendant selectors for precise element targeting
+- Applying multiple style properties in a single jQuery call using object notation
+
+---
+
+**Course:** CS 648 - Modern Web Development Frameworks<br>
+**University:** San Diego State University (SDSU)<br>
+**Author:** Merlyn Mercylona M
